@@ -38,7 +38,7 @@ BST.prototype.addNode = function(value) {
 
 BST.prototype.findMin = function(node) {
   if (node.left) {
-    return this.findMin(node.left, curNode);
+    return this.findMin(node.left);
   }
   return node;
 }
