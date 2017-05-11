@@ -1,2 +1,6 @@
 # binary-search-trees
-BST practice (find and delete nodes)
+
+My own implementations for BST methods in:
+- Traversal / Searching
+- Insertion
+- Removal

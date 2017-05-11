@@ -1,3 +1,9 @@
+//This is my "scaffold" for creating a BST and it's Nodes or "vertices." The
+//way in which I've structured my methods for adding Nodes is by defining a
+//prototype method on my Node constructor which accepts a value. In this way I've
+//separated my logic so that the prototype methods have access to the
+//context (this) of my instantiated Nodes.
+
 function Node(value) {
   this.value = value;
   this.left = null;
@@ -27,6 +33,9 @@ Node.prototype.addNode = function(value) {
 function BST() {
   this.root = null;
 }
+
+//You can see here that my BST's own #addNode function is wrapping my Node's
+//#addNode function.
 
 BST.prototype.addNode = function(value) {
   if(!this.root) {
@@ -86,6 +95,7 @@ BST.prototype.findAndDeleteNode = function(value) {
   return this;
 }
 
+//Instantiating my BST and adding nodes below.
 const tree = new BST();
 
 tree.addNode(20);
