@@ -11,6 +11,7 @@ function Node(value) {
   this.parent = null;
 };
 
+//currently only handling unique vals when adding nodes
 Node.prototype.addNode = function(value) {
   if(value === this.value) return this;
   if(value < this.value) {
@@ -47,6 +48,7 @@ BST.prototype.addNode = function(value) {
 }
 
 BST.prototype.findMin = function(node) {
+  if(!node) return null;
   if (node.left) {
     return this.findMin(node.left);
   }
@@ -54,6 +56,7 @@ BST.prototype.findMin = function(node) {
 }
 
 BST.prototype.findMax = function(node) {
+  if(!node) return null;
   if(node.right) {
     return this.findMax(node.right)
   }
