@@ -8,6 +8,7 @@ function Node(value) {
   this.value = value;
   this.left = null;
   this.right = null;
+  this.parent = null;
 };
 
 Node.prototype.addNode = function(value) {
