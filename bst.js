@@ -72,6 +72,7 @@ BST.prototype.findNodeByVal = function(value, _node) {
   if(node.value > value && node.left) return this.findNodeByVal(value, node.left);
   if(node.value < value && node.right) return this.findNodeByVal(value, node.right);
 
+  
   return null;
 }
 
