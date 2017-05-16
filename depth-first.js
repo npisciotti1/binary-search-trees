@@ -1,4 +1,4 @@
-//Pre-order traversal.
+//Methods for Pre-Order, In-Order, and Post-Order traversal of a BST.
 
 //I've added the constructor pattern here to help clarify the traversal methods
 //below and how they work.
