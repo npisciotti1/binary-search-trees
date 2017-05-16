@@ -63,16 +63,16 @@ BST.prototype.findMax = function(node) {
   return node;
 }
 
-BST.prototype.findNodeByVal = function(value, _node) {
-  if(!_node) _node = this.root;
-  let node = _node;
-  if(!node.left && !node.right) return node;
-  if(node.left.value === value) return node.left;
-  if(node.right.value === value) return node.right;
+//This method accepts a node as a second argument, allowing for subtrees to be
+//provided, otherwise the root is used.
+BST.prototype.findNodeByVal = function(value, node) {
+  if(!this.root) return null;
+  if(!node) node = this.root;
+
+  if(node.value === value) return node;
   if(node.value > value && node.left) return this.findNodeByVal(value, node.left);
   if(node.value < value && node.right) return this.findNodeByVal(value, node.right);
 
-  
   return null;
 }
 
