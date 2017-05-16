@@ -8,15 +8,15 @@ function Node(val) {
   this.parent = null;
 }
 
-function breadthFirstSearch(root) {
-  if(!root) return;
+BST.prototype.breadthFirstSearch = function() {
+  if(!this.root) return;
 
   var queue = [];
-  queue.push(root);
+  queue.push(this.root);
 
   while(queue.length > 0) {
     var node = queue[0];
-    
+
     console.log(node.value);
     if(node.left) queue.push(node.left);
     if(node.right) queue.push(node.right)
