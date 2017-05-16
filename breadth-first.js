@@ -1,4 +1,4 @@
-//This method below is a breadth-first traversal of a BST
+//The method below is a breadth-first traversal of a BST
 
 
 function Node(val) {
