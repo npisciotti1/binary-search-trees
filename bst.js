@@ -117,4 +117,4 @@ tree.addNode(19);
 tree.addNode(24);
 tree.addNode(28);
 tree.addNode(35);
-tree.addNode(100);
+tree.addNode(101);
